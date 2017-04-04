@@ -1,0 +1,25 @@
+{
+  "name": "robotjs-test",
+  "version": "1.0.0",
+  "description": "",
+  "node-main": "index.js",
+  "main": "index.html",
+  "scripts": {
+    "start": "nw"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahvonenj/robotjs-test.git"
+  },
+  "author": "Jonah Ahvonen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahvonenj/robotjs-test/issues"
+  },
+  "homepage": "https://github.com/ahvonenj/robotjs-test#readme",
+  "dependencies": {
+    "babel-register": "^6.24.0",
+    "nw": "^0.21.4",
+    "robotjs": "^0.4.7"
+  }
+}
