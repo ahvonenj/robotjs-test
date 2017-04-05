@@ -17,6 +17,7 @@
   "dependencies": {
     "babel-register": "^6.24.0",
     "daemon": "^1.1.0",
+    "keypress": "^0.2.1",
     "nw": "^0.21.4",
     "robotjs": "^0.4.7"
   }
