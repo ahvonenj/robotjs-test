@@ -1,6 +1,19 @@
-//var robot = require('robotjs');
-//var nw = require('nwjs');
+var daemon = require('daemon');
 
-//nw.Window.open('index.html', {}, function(win) {});
+// Log parent pid
+console.log('INDEX RUNNING, PID: ' + process.pid);
 
-console.log('INIT')
+
+// Spawn child process
+var child = daemon.daemon('demon.js', null,
+{
+	stdout: 'pipe'
+});
+
+// Log child process stdout-output
+child.stdout.on('data', function(data)
+{
+	console.log(data.toString());
+});
+
+
